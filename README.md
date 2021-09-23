@@ -10,7 +10,7 @@ What I've learned:
 * Use JavaScript to manipulate DOM. Use document.querySelector and getElementById to get the element in HTML and add feature in JS.
 * Learn how to use "element.style.display = "none""; and "element.style.display = "initial"" to hide elements and show elements in order to display different questions and the score page.
 * Use timeInterval() and clearInterval() to control the timer. Use setTimeout() to control the right/wrong result for each answer.
-* Use localStorage.setItem and .getItem to store the game result in localStorage, and invoke the key value pair and manipulate in different JS page.
+* Use localStorage.setItem() and .getItem() to store the game result in localStorage, and invoke the key value pair and manipulate in different JS page. Use localStorage.clear() to clean the localStorage.
 * window.location.href = "html.link" can direct to the linked page.
 
 
