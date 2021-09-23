@@ -6,7 +6,7 @@ This project is about creating a timed code quiz with multiple-choice questions.
 
 What I've learned:
 
-* I can add a HTML page link to a <div> in another HTML page to connect two HTML.
+* I can add a HTML page link to a div in another HTML page to connect two HTML.
 * Use JavaScript to manipulate DOM. Use document.querySelector and getElementById to get the element in HTML and add feature in JS.
 * Learn how to use "element.style.display = "none""; and "element.style.display = "initial"" to hide elements and show elements in order to display different questions and the score page.
 * Use timeInterval() and clearInterval() to control the timer. Use setTimeout() to control the right/wrong result for each answer.
