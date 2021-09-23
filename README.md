@@ -18,8 +18,9 @@ What I've learned:
 * Log in GitHub Account
 * This GitHub URL is : https://github.com/lijing-code/04-Web-APIs-Code-Quiz
 * The live URL is : https://lijing-code.github.io/04-Web-APIs-Code-Quiz/
-
+  
 ## Usage
+<img width="835" alt="截屏2021-09-23 上午12 38 30" src="https://user-images.githubusercontent.com/68092036/134457880-42e6ca22-dcec-4674-af1a-9523b2a56eef.png">  
 * Open the live URL: https://lijing-code.github.io/04-Web-APIs-Code-Quiz/
 * Press the red button "Start Quiz".
 * Answer each questions.
