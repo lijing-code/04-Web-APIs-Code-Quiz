@@ -13,5 +13,6 @@ for(var i =0; i < localStorage.length; i++){
 var clearScoresEl = document.querySelector("#clear-scores");
 clearScoresEl.addEventListener("click", function(event){
     event.preventDefault();
+    localStorage.clear();
     historyRecord.innerHTML = "";
 })
