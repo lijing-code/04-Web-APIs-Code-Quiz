@@ -10,6 +10,8 @@ questionsEl.style.display = "none";
 //final score section hide
 var finalScore = document.querySelector("#score");
 finalScore.style.display = "none";
+
+// An array to store all the questions with choices and answers
 var questions = [ 
     {title: "Commonly used data types DO NOT include:",
     choices: ["strings", "booleans", "alerts", "numbers"],
@@ -29,22 +31,27 @@ var questions = [
     }
 ];
 
-// Click the start button
+// Click the start button; game start; timer start running
+function timeCount() {
+    secondsLeft--;
+    timerEl.textContent = secondsLeft;
+    if (secondsLeft == 0) {
+        clearInterval(timerNum);
+        initialPage();
+    }   
+}
 startQuizBtn.addEventListener("click", function(event){
     event.preventDefault();
     startEl.style.display = "none";
     timerNum = setInterval(function() {
-        secondsLeft--;
-        timerEl.textContent = secondsLeft;   
+        timeCount(); 
     }, 1000);
-    if (secondsLeft != 0){ 
+    if (secondsLeft > 0){ 
         showQuestions();
-    } else {
-        gameOver();
-    }    
+    } 
 });
 
-//Game Start
+//Game Start 
 var questionTitle = document.querySelector("#question-title");
 var choicesEl = document.querySelector("#choices");
 var result = document.createElement("p");
@@ -104,11 +111,12 @@ function gameOver(){
     }
 }
 
-//Show scores and put inital column
+//Show scores and ask for inital; use localStorace to store the result; jump to view highscore page
 var finalScoreTitle = document.querySelector(".final-score");
 var formEl = document.querySelector(".enter-initial");
 var submit = document.querySelector("#submit");
 var initial = document.querySelector("#initial");
+
 function initialPage(){
     questionsEl.style.display = "none";
     finalScore.style.display = "initial";

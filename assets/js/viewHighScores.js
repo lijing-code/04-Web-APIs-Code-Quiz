@@ -1,3 +1,4 @@
+//Get info from localStorage and show the result on screen
 var historyRecord = document.querySelector("#historyRecord");
 for(var i =0; i < localStorage.length; i++){
     var list = document.createElement("li");   
@@ -8,7 +9,7 @@ for(var i =0; i < localStorage.length; i++){
         list.innerHTML = "Name: "+ localStorage.key(i) +"    "+ "Score: "+localStorage.getItem(localStorage.key(i));
     }
 }
-
+//clear score function
 var clearScoresEl = document.querySelector("#clear-scores");
 clearScoresEl.addEventListener("click", function(event){
     event.preventDefault();
